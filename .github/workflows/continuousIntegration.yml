@@ -18,7 +18,7 @@ jobs:
     container: docker://karimmouline/forge-dev-img:latest
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v5
     - name: Install Forge
       run: |
         raco pkg install --auto --no-docs ./forge ./froglet
